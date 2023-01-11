@@ -1,0 +1,128 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Basic CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  background-color: #202124;
+}
+
+/* App Area CSS */
+.app-area {
+  max-width: 750px;
+  padding: 30px;
+  background-color: red;
+  margin: 50px auto;
+  background-color: #303134;
+  border: 1px solid #5f6368;
+}
+
+.app-area h1 {
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Add Task Area CSS */
+
+.form-group {
+  display: flex;
+}
+
+.form-group input {
+  flex: 1;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #5f6368;
+  color: #fff;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+.form-group button {
+  cursor: pointer;
+  padding: 10px 25px;
+}
+
+/* Task Area CSS */
+.task-area {
+  margin-top: 40px;
+}
+
+.task-area h2 {
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.single-task {
+  display: flex;
+  background-color: #202124;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.single-task::before {
+  position: absolute;
+  content: "\f111";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 12px;
+}
+
+.single-task.task-completed::before {
+  content: "\f00c";
+}
+.single-task input {
+  flex: 1;
+  padding: 10px;
+  padding-left: 20px;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  border: none;
+}
+
+.single-task button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.single-task .edit-task {
+  background-color: #ffc107;
+}
+.single-task .complete-task {
+  background-color: #198754;
+  color: #fff;
+}
+.single-task .delete-task {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Error Text */
+
+#error-text p {
+  font-size: 14px;
+  color: #ffc107;
+  margin-top: 10px;
+}
